@@ -1,0 +1,87 @@
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+h4 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+body {
+  font-size: 1rem;
+  color: white;
+  background: black;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+// font-family: 'Julius Sans One', sans-serif;
+// font-family: 'Poiret One', cursive;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Spartan', sans-serif;
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+}
+
+p {
+  font-weight: 200;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+.logo a {
+  color: white;
+  font-size: 2em;
+  text-transform: lowercase;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  // font-family: "Poiret One", cursive;
+  font-weight: bold;
+  // font-weight: bold;
+
+  // font-family: "Spartan", sans-serif;
+}
+
+nav ion-icon {
+  font-size: 32px;
+}
+
+.skillContainerAll > div:nth-child(1) > ion-icon:nth-child(1) {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.skillContainerAll > div:nth-child(1) > ion-icon:nth-child(1n + 2) {
+  font-size: 24px;
+}
+
+// SKILLS
+
+.skills h3 {
+  text-align: center;
+  margin: 30px 0;
+  text-transform: lowercase;
+}
+
+.skills p {
+  margin-top: 10px;
+}
