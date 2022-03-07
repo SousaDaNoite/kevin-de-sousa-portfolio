@@ -274,6 +274,12 @@ html {
   padding: 0;
 }
 
+html {
+  font-size: 100%;
+  line-height: 1.3rem;
+  color: #fff;
+}
+
 h1 {
   font-size: 3em;
   line-height: 1;
@@ -321,9 +327,10 @@ h1 {
 }
 
 p {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1rem;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  line-height: 20px;
 }
 
 .logo a {
@@ -383,28 +390,26 @@ main {
 
 body {
   margin: 0 auto;
+  background: #232931;
 }
 
 img {
   border-radius: 8%;
+  width: 100%;
 }
 
-#skills > h2:nth-child(1) {
-  text-align: center;
-  margin: 30px 0;
-  text-transform: lowercase;
+/* styles.css | http://127.0.0.1:5500/styles/styles.css?_cacheOverride=1646620375090 */
+/* Element | http://127.0.0.1:5500/?#home */
+/* styles.css | http://127.0.0.1:5500/styles/styles.css */
+/* Element | http://127.0.0.1:5500/?#home */
+Element .myPortfolio1 > div:nth-child(1) > div:nth-child(1) {
+  width: 300px;
 }
 
-.skillContainerIcons {
-  margin-right: 30px;
+Element .myPortfolio1 > div:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+  width: 100%;
 }
 
-.skills {
-  height: 60vh;
-  max-height: 600px;
-}
-
-/* Element | http://127.0.0.1:5500/ */
 nav {
   position: fixed;
   background-color: #4cd9c9;
@@ -461,7 +466,7 @@ nav .wrapper {
 header {
   background-color: #4cd9c9;
   width: 100%;
-  height: 95vh;
+  height: 100vh;
 }
 header .wrapper {
   display: -webkit-box;
@@ -491,10 +496,6 @@ header .wrapper {
   width: 300px;
 }
 
-.heroImgSide {
-  padding-right: 10%;
-}
-
 .heroImg {
   border-radius: 50%;
 }
@@ -503,15 +504,12 @@ h1 {
   margin-bottom: 20px;
 }
 
-h1 {
-  color: white;
-}
-
 .introImg {
-  border-radius: 50%;
+  border-radius: 7%;
+  width: 300px;
 }
 
-#about {
+.intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -522,7 +520,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 90vh;
+  height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -530,12 +528,19 @@ h1 {
   max-height: 600px;
   width: 100%;
 }
-#about h2 {
+.intro h2 {
   margin: 30px 0 20px 0;
 }
+.intro p {
+  width: 40%;
+  margin-bottom: 10px;
+}
 
-.intro {
-  width: 100%;
+body {
+  background-image: url(../../../assets/1698013.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .bioTextSide {
@@ -547,15 +552,22 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 5%;
-}
-
-.bioImgContainer {
-  width: 300px;
+  padding-left: 30px;
 }
 
 .bioTextContainer {
-  width: 50%;
+  width: 60%;
+  max-width: 332px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 13px;
+  margin-top: 23px;
+}
+.bioTextContainer h3 {
+  text-transform: lowercase;
+}
+.bioTextContainer p {
+  margin: 18px 0;
 }
 
 .bioImgSide {
@@ -567,10 +579,16 @@ h1 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-right: 5%;
+  padding-right: 70px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.bioImgSide .bioImgContainer {
+  width: 300px;
+}
+.bioImgSide .bioImgContainer .bioImg {
+  width: 100%;
 }
 
 .bio {
@@ -583,30 +601,47 @@ h1 {
   -webkit-box-pack: unset;
       -ms-flex-pack: unset;
           justify-content: unset;
-  height: 50vh;
+  height: 90vh;
   max-height: 500px;
   margin-bottom: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: solid 5px #4cd9c9;
+  border-bottom: solid 5px #4cd9c9;
+}
+
+.bioImg {
+  -webkit-box-shadow: 92px 15px #4cd9c9, 350px 15px #4cd9c9, 484px 15px #4cd9c9;
+          box-shadow: 92px 15px #4cd9c9, 350px 15px #4cd9c9, 484px 15px #4cd9c9;
 }
 
 .skills {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 70%;
-  margin: 0 auto;
-  height: 70vh;
-  max-height: 600px;
-  height: 100vh;
-  max-height: 750px;
-  margin-bottom: 50px;
+  margin: 0 auto 75px;
+  height: 80%;
 }
 .skills h3 {
-  margin: 0 0 30px 0;
+  width: 200px;
+  height: 45px;
+  border-left: solid 2px #4cd9c9;
+  padding: 11px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .hardSkills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 0 70px 0px;
+  margin: 0 0 30px 0px;
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -633,15 +668,19 @@ h1 {
   min-height: 245px;
   min-width: 245px;
   padding: 17px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: solid 3px #4cd9c9;
 }
 
 .skillContainerIcons {
   margin-right: 25px;
   margin-right: 10px;
   text-align: center;
+  height: 100%;
 }
 
 .softSkills {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -657,9 +696,7 @@ h1 {
 
 .altSkill {
   height: 31vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: inherit;
       -ms-flex-pack: inherit;
           justify-content: inherit;
@@ -669,6 +706,7 @@ h1 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 70px;
+  background-color: #393e46;
 }
 
 .altSkillTextSide {
@@ -697,6 +735,9 @@ h1 {
   padding-top: 20px;
   margin-bottom: 40px;
 }
+.myPortfolio p {
+  padding-bottom: 10px;
+}
 .myPortfolio .myPortfolioAll .myPortImgSide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -704,6 +745,10 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 5%;
+}
+.myPortfolio .myPortfolioAll .myPortImgSide .myPortImgContainer {
+  width: 250px;
 }
 .myPortfolio .myPortfolioAll .myPortTextSide {
   display: -webkit-box;
@@ -715,6 +760,7 @@ h1 {
   width: 30%;
   padding-left: 50px;
   height: 100%;
+  border-left: 2px solid #4cd9c9;
 }
 .myPortfolio .myPortfolioAll .myPortTextSide .myPortTextDescription {
   width: 70%;
@@ -728,10 +774,28 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 4%;
 }
 
 .myPortfolio .wrapper {
   width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.myPortfolio .wrapper h3 {
+  height: 45px;
+  width: 361px;
+  border-left: solid 2px #4cd9c9;
+  padding-top: 7px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .myPortTextSide ul {
@@ -770,6 +834,11 @@ h1 {
           align-items: center;
   text-align: center;
 }
+.contactForm .wrapper p {
+  width: 600px;
+  max-width: 600px;
+  margin: 20px 0;
+}
 .contactForm .wrapper form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -779,13 +848,17 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 600px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .contactForm .wrapper form input,
 .contactForm .wrapper form textarea {
-  border-radius: 5px;
-  margin-bottom: 6%;
   font-family: inherit;
+  border-radius: 10px;
+  margin-bottom: 6%;
   padding-left: 8%;
+  width: 100%;
 }
 .contactForm .wrapper form input {
   height: 50px;
@@ -795,8 +868,14 @@ h1 {
   height: 100px;
 }
 .contactForm .wrapper form button {
-  width: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 170px;
   height: 50px;
   border-radius: 5px;
   font-family: inherit;
+  background-color: white;
+  color: black;
+  border: none;
 }

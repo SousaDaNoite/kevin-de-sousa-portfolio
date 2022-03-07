@@ -24,29 +24,12 @@ main {
 
 body {
   margin: 0 auto;
+  background: #232931;
 }
 
 img {
   border-radius: 8%;
-}
-// STUFF FROM DEVELOPER TOOLS
-
-// Element Element .bioTextContainer > p:nth-child(2) {
-//   padding-top: 30px;
-//   padding-bottom: 40px;
-// }
-
-#skills > h2:nth-child(1) {
-  text-align: center;
-  margin: 30px 0;
-  text-transform: lowercase;
-}
-.skillContainerIcons {
-  margin-right: 30px;
-}
-.skills {
-  height: 60vh;
-  max-height: 600px;
+  width: 100%;
 }
 
 // // SAVING THIS FOR LATER- ICON COLORS HOVER
@@ -74,4 +57,22 @@ img {
 
 // FROM DEVELOPER TOOLS
 
-/* Element | http://127.0.0.1:5500/ */
+/* styles.css | http://127.0.0.1:5500/styles/styles.css?_cacheOverride=1646620375090 */
+
+// p {
+//   /* font-weight: 300; */
+//   font-weight: 600;
+// }
+
+/* Element | http://127.0.0.1:5500/?#home */
+
+/* styles.css | http://127.0.0.1:5500/styles/styles.css */
+
+/* Element | http://127.0.0.1:5500/?#home */
+
+Element .myPortfolio1 > div:nth-child(1) > div:nth-child(1) {
+  width: 300px;
+}
+Element .myPortfolio1 > div:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+  width: 100%;
+}
