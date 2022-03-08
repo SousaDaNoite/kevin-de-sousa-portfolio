@@ -745,7 +745,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 5%;
+  margin: 7% 0;
 }
 .myPortfolio .myPortfolioAll .myPortImgSide .myPortImgContainer {
   width: 250px;
@@ -755,6 +755,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 300px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-left: 2px solid #4cd9c9;
 }
 .myPortfolio .myPortfolioAll .myPortTextSide .myPortTextTags {
   width: 30%;
