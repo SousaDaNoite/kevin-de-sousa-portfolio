@@ -410,6 +410,11 @@ Element .myPortfolio1 > div:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
   width: 100%;
 }
 
+/* styles.css | http://127.0.0.1:5500/styles/styles.css */
+.myPortfolio .myPortfolioAll .myPortImgSide {
+  /* margin: 7% 0; */
+}
+
 nav {
   position: fixed;
   background-color: #4cd9c9;
@@ -686,7 +691,6 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -733,7 +737,11 @@ body {
   text-align: center;
   text-transform: lowercase;
   padding-top: 20px;
-  margin-bottom: 40px;
+  height: 45px;
+  width: 361px;
+  border-left: solid 2px #4cd9c9;
+  padding-top: 7px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .myPortfolio p {
   padding-bottom: 10px;
@@ -745,10 +753,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 7% 0;
 }
 .myPortfolio .myPortfolioAll .myPortImgSide .myPortImgContainer {
-  width: 250px;
+  width: 610px;
+  height: 385px;
 }
 .myPortfolio .myPortfolioAll .myPortTextSide {
   display: -webkit-box;
@@ -762,7 +770,6 @@ body {
   width: 30%;
   padding-left: 50px;
   height: 100%;
-  border-left: 2px solid #4cd9c9;
 }
 .myPortfolio .myPortfolioAll .myPortTextSide .myPortTextDescription {
   width: 70%;
@@ -791,13 +798,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.myPortfolio .wrapper h3 {
-  height: 45px;
-  width: 361px;
-  border-left: solid 2px #4cd9c9;
-  padding-top: 7px;
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .myPortTextSide ul {
