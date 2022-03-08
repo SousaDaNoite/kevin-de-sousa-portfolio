@@ -31,7 +31,9 @@ img {
   border-radius: 8%;
   width: 100%;
 }
-
+a {
+  color: white;
+}
 // // SAVING THIS FOR LATER- ICON COLORS HOVER
 // .skillContainer1 > div:nth-child(1) > ion-icon:nth-child(1) {
 //   color: #e45321;
@@ -56,29 +58,3 @@ img {
 // }
 
 // FROM DEVELOPER TOOLS
-
-/* styles.css | http://127.0.0.1:5500/styles/styles.css?_cacheOverride=1646620375090 */
-
-// p {
-//   /* font-weight: 300; */
-//   font-weight: 600;
-// }
-
-/* Element | http://127.0.0.1:5500/?#home */
-
-/* styles.css | http://127.0.0.1:5500/styles/styles.css */
-
-/* Element | http://127.0.0.1:5500/?#home */
-
-Element .myPortfolio1 > div:nth-child(1) > div:nth-child(1) {
-  width: 300px;
-}
-Element .myPortfolio1 > div:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-  width: 100%;
-}
-
-/* styles.css | http://127.0.0.1:5500/styles/styles.css */
-
-.myPortfolio .myPortfolioAll .myPortImgSide {
-  /* margin: 7% 0; */
-}

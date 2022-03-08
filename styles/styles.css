@@ -398,21 +398,8 @@ img {
   width: 100%;
 }
 
-/* styles.css | http://127.0.0.1:5500/styles/styles.css?_cacheOverride=1646620375090 */
-/* Element | http://127.0.0.1:5500/?#home */
-/* styles.css | http://127.0.0.1:5500/styles/styles.css */
-/* Element | http://127.0.0.1:5500/?#home */
-Element .myPortfolio1 > div:nth-child(1) > div:nth-child(1) {
-  width: 300px;
-}
-
-Element .myPortfolio1 > div:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-  width: 100%;
-}
-
-/* styles.css | http://127.0.0.1:5500/styles/styles.css */
-.myPortfolio .myPortfolioAll .myPortImgSide {
-  /* margin: 7% 0; */
+a {
+  color: white;
 }
 
 nav {
@@ -771,6 +758,10 @@ body {
   padding-left: 50px;
   height: 100%;
 }
+.myPortfolio .myPortfolioAll .myPortTextSide .myPortTextTags ion-icon {
+  font-size: 32px;
+  color: teal;
+}
 .myPortfolio .myPortfolioAll .myPortTextSide .myPortTextDescription {
   width: 70%;
   display: -webkit-box;
@@ -861,6 +852,8 @@ body {
   margin-bottom: 6%;
   padding-left: 8%;
   width: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .contactForm .wrapper form input {
   height: 50px;
@@ -877,7 +870,147 @@ body {
   height: 50px;
   border-radius: 5px;
   font-family: inherit;
-  background-color: white;
-  color: black;
+  background-color: #4cd9c9;
+  color: white;
   border: none;
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 90%;
+  }
+
+  nav {
+    height: 50px;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .heroBoxes {
+    margin: 50px 0 0 0;
+    padding-right: 0;
+  }
+
+  main .wrapper {
+    width: 85%;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .intro p {
+    width: 40%;
+    width: 70%;
+  }
+
+  .bioTextSide {
+    padding-left: 30px;
+    padding-left: 0px;
+  }
+}
+@media (max-width: 865px) {
+  .intro p {
+    width: 70%;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .bio .bioImgSide .bioImgContainer .bioImg {
+    width: 75%;
+  }
+  .bio .bioImgSide {
+    width: 42%;
+    padding-right: 12px;
+  }
+  .bio .bioImgSide .bioImg {
+    -webkit-box-shadow: 92px 15px #4cd9c9, 244px 15px #4cd9c9, 442px 15px #4cd9c9;
+            box-shadow: 92px 15px #4cd9c9, 244px 15px #4cd9c9, 442px 15px #4cd9c9;
+  }
+  .bio .bioTextSide {
+    padding-left: 0px;
+    width: 45%;
+  }
+  .bio .bioTextSide .bioTextContainer {
+    width: 85%;
+    max-width: 350px;
+    padding: 19px;
+  }
+
+  .myPortfolio {
+    height: min-height;
+    margin-bottom: 10%;
+  }
+}
+@media (max-width: 795px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro h2 {
+    margin: 15px 0 20px 0;
+  }
+  .intro p {
+    width: 90%;
+  }
+
+  .bio {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-height: 700px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 500px;
+  }
+  .bio h3 {
+    text-align: center;
+  }
+  .bio .bioImgSide,
+.bio .bioImg,
+.bio .bioImgSide,
+.bio .bioTextSide,
+.bio .bioTextContainer {
+    width: 100%;
+  }
+  .bio .bioImgSide {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 61px;
+  }
+  .bio .bioImgSide .bioImgContainer {
+    width: 250px;
+  }
+  .bio .bioImgSide .bioImgContainer .bioImg {
+    -webkit-box-shadow: 3px 3px #4cd9c9;
+            box-shadow: 3px 3px #4cd9c9;
+    padding-right: 0px;
+  }
+  .bio .bioTextSide {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .bio .bioTextSide .bioTextContainer {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .hardSkills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .skillContainerAll {
+    border-radius: 1%;
+    min-width: 0;
+    min-height: 0;
+    max-width: 1000px;
+    margin: 15px;
+  }
 }

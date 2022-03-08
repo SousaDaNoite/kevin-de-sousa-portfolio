@@ -1,0 +1,131 @@
+// MEDIA QUERIES MAX 1000PX
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 90%;
+  }
+
+  nav {
+    height: 50px;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .heroBoxes {
+    margin: 50px 0 0 0;
+    padding-right: 0;
+  }
+  main .wrapper {
+    width: 85%;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .intro p {
+    width: 40%;
+    width: 70%;
+  }
+  .bioTextSide {
+    padding-left: 30px;
+    padding-left: 0px;
+  }
+}
+
+// MEDIA QUERIES MAX 865PX
+@media (max-width: 865px) {
+  .intro p {
+    width: 70%;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .bio {
+    .bioImgSide .bioImgContainer .bioImg {
+      width: 75%;
+    }
+    .bioImgSide {
+      width: 42%;
+      padding-right: 12px;
+      .bioImg {
+        box-shadow: 92px 15px #4cd9c9, 244px 15px #4cd9c9, 442px 15px #4cd9c9;
+      }
+    }
+    .bioTextSide {
+      padding-left: 0px;
+      width: 45%;
+      .bioTextContainer {
+        width: 85%;
+        max-width: 350px;
+        padding: 19px;
+      }
+    }
+  }
+
+  .myPortfolio {
+    height: min-height;
+    margin-bottom: 10%;
+  }
+}
+
+// MEDIA QUERIES MAX 795PX
+@media (max-width: 795px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  .intro {
+    h2 {
+      margin: 15px 0 20px 0;
+    }
+    p {
+      width: 90%;
+    }
+  }
+  .bio {
+    justify-content: center;
+    max-height: 700px;
+    flex-direction: column;
+    min-height: 500px;
+    h3 {
+      text-align: center;
+    }
+    .bioImgSide,
+    .bioImg,
+    .bioImgSide,
+    .bioTextSide,
+    .bioTextContainer {
+      width: 100%;
+    }
+    .bioImgSide {
+      justify-content: center;
+      margin-top: 61px;
+      .bioImgContainer {
+        width: 250px;
+        .bioImg {
+          box-shadow: 3px 3px #4cd9c9;
+          padding-right: 0px;
+        }
+      }
+    }
+
+    .bioTextSide {
+      justify-content: center;
+      .bioTextContainer {
+        max-width: 90%;
+        padding: 10px;
+      }
+    }
+  }
+
+  .hardSkills {
+    flex-direction: column;
+  }
+
+  .skillContainerAll {
+    border-radius: 1%;
+    min-width: 0;
+    min-height: 0;
+    max-width: 1000px;
+    margin: 15px;
+  }
+}
