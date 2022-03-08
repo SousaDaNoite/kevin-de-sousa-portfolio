@@ -1,9 +1,4 @@
-// NAV
-
-// nav.wrapper {
-//   display: flex;
-//   justify-content: space-between;
-// }
+// ---------------NAV SECTION START----------
 nav {
   position: fixed;
   background-color: #4cd9c9;
@@ -38,56 +33,36 @@ nav {
     display: none;
   }
 }
+// NAV SECTION END
 
-// HEADER
+// -------------HEADER SECTION START-----------
 header {
   background-color: #4cd9c9;
   width: 100%;
   height: 100vh;
-  // background-image: url(../../../assets/pexels-adrien-olichon-2387793.jpg);
-  // background-size: cover;
-  // background-repeat: no-repeat;
   .wrapper {
     display: flex;
     width: 70%;
     margin: 0 auto;
+    h1 {
+      margin-bottom: 20px;
+    }
+    .heroBoxes {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      // align-content: ;
+      align-items: center;
+      margin: 80px 0 0 0;
+      padding-right: 7%;
+      max-width: 1100px;
+      .heroImgContainer {
+        // height: 300px;
+        width: 300px;
+        img {
+          border-radius: 10px;
+        }
+      }
+    }
   }
 }
-
-.heroBoxes {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  // align-content: ;
-  align-items: center;
-  margin: 80px 0 0 0;
-  padding-right: 7%;
-  max-width: 1100px;
-  .heroImgContainer {
-    height: 300px;
-    width: 300px;
-  }
-}
-
-.heroImg {
-  border-radius: 50%;
-}
-
-h1 {
-  margin-bottom: 20px;
-}
-// header {
-//   background-color: blue;
-//   padding-top: 30px;
-//   height: 600px;
-//   .wrapper {
-//     .heroImgContainer {
-//       width: 50%;
-//       min-width: 262px;
-
-//       img {
-//         width: 100%;
-//       }
-//     }
-//   }
-// }

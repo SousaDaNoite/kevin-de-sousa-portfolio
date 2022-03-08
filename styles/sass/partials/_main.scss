@@ -1,242 +1,204 @@
-.introImg {
-  border-radius: 7%;
-  width: 300px;
-}
-
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  justify-content: center;
-  text-align: center;
-  max-height: 600px;
-  width: 100%;
-  h2 {
-    margin: 30px 0 20px 0;
-  }
-  p {
-    width: 40%;
-    margin-bottom: 10px;
-  }
-}
-
 body {
   background-image: url(../../../assets/1698013.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
 
-// BIO section
+  // ------INTRO SECTION START
 
-.bioTextSide {
-  width: 50%;
-  height: 100%;
-  align-items: center;
-  display: flex;
-  padding-left: 30px;
-}
-
-.bioTextContainer {
-  width: 60%;
-  max-width: 332px;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-  padding: 13px;
-  margin-top: 23px;
-  h3 {
-    text-transform: lowercase;
-  }
-  p {
-    margin: 18px 0;
-  }
-}
-
-.bioImgSide {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 70px;
-  align-items: center;
-  .bioImgContainer {
-    width: 300px;
-    .bioImg {
-      width: 100%;
-    }
-  }
-}
-
-.bio {
-  display: flex;
-  align-items: center;
-  justify-content: unset;
-  height: 90vh;
-  max-height: 500px;
-  margin-bottom: 5%;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-top: solid 5px #4cd9c9;
-  border-bottom: solid 5px #4cd9c9;
-}
-
-.bioImg {
-  box-shadow: 92px 15px #4cd9c9, 350px 15px #4cd9c9, 484px 15px #4cd9c9;
-}
-
-// ---------SKILLS SECTION--------------------
-
-// -----Hard Skills
-
-.skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 70%;
-  margin: 0 auto 75px;
-  height: 80%;
-
-  h3 {
-    width: 200px;
-    height: 45px;
-    border-left: solid 2px #4cd9c9;
-    padding: 11px;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-}
-
-.hardSkills {
-  display: flex;
-  margin: 0 0 30px 0px;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.skillContainerAll {
-  align-items: center;
-  background-color: lightgray;
-  border-radius: 5%;
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-  max-height: 245px;
-  max-width: 245px;
-  min-height: 245px;
-  min-width: 245px;
-  padding: 17px;
-  background-color: rgb(0, 0, 0, 0.5);
-  border: solid 3px #4cd9c9;
-}
-
-.skillContainerIcons {
-  margin-right: 25px;
-  margin-right: 10px;
-  text-align: center;
-  height: 100%;
-}
-
-// ----Soft Skills
-
-.softSkills {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-
-  flex-wrap: wrap;
-  .softSkillContainerAll {
-    width: 30%;
-  }
-}
-
-// ALT SKILL SECTION
-
-.altSkill {
-  height: 31vh;
-  display: none;
-  justify-content: inherit;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 70px;
-  background-color: #393e46;
-}
-.altSkillTextSide {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  padding-right: 10%;
-  padding-left: 18%;
-  h3 {
-    margin-bottom: 20px;
-  }
-}
-.altSkillsGraphSide {
-  width: 50%;
-}
-
-// PORTFOLIO SECTION
-.myPortfolio {
-  h3 {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
     text-align: center;
-    text-transform: lowercase;
-    padding-top: 20px;
-    height: 45px;
-    width: 361px;
-    border-left: solid 2px #4cd9c9;
-    padding-top: 7px;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-  p {
-    padding-bottom: 10px;
-  }
-  .myPortfolioAll {
-    .myPortImgSide {
-      display: flex;
-      justify-content: center;
-
-      .myPortImgContainer {
-        width: 610px;
-        height: 385px;
-      }
+    max-height: 600px;
+    width: 100%;
+    h2 {
+      margin: 30px 0 20px 0;
     }
-    .myPortTextSide {
+    p {
+      width: 40%;
+      margin-bottom: 10px;
+    }
+    .introImg {
+      border-radius: 7%;
+      width: 300px;
+    }
+  }
+
+  // INTRO SECTION END
+
+  // --------BIO SECTION START------
+  .bio {
+    display: flex;
+    align-items: center;
+    justify-content: unset;
+    height: 90vh;
+    max-height: 500px;
+    margin-bottom: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: solid 5px #4cd9c9;
+    border-bottom: solid 5px #4cd9c9;
+    .bioTextSide {
+      width: 50%;
+      height: 100%;
+      align-items: center;
       display: flex;
-      height: 300px;
-      background-color: rgba(0, 0, 0, 0.4);
-      border-left: 2px solid #4cd9c9;
-      .myPortTextTags {
-        width: 30%;
-        padding-left: 50px;
-        height: 100%;
-        ion-icon {
-          font-size: 32px;
-          color: teal;
+      padding-left: 30px;
+      .bioTextContainer {
+        width: 60%;
+        max-width: 332px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        padding: 13px;
+        margin-top: 23px;
+        h3 {
+          text-transform: lowercase;
+        }
+        p {
+          margin: 18px 0;
         }
       }
-      .myPortTextDescription {
-        width: 70%;
+    }
+
+    .bioImgSide {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 70px;
+      align-items: center;
+      .bioImgContainer {
+        width: 300px;
+        .bioImg {
+          width: 100%;
+          box-shadow: 92px 15px #4cd9c9, 350px 15px #4cd9c9, 484px 15px #4cd9c9;
+        }
+      }
+    }
+  }
+
+  // ---------SKILLS SECTION START--------------------
+
+  // -----Hard Skills
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto 75px;
+    height: 80%;
+
+    h3 {
+      width: 200px;
+      height: 45px;
+      border-left: solid 2px #4cd9c9;
+      padding: 11px;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .skillContainerAll {
+      align-items: center;
+      background-color: lightgray;
+      border-radius: 5%;
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+      max-height: 245px;
+      max-width: 245px;
+      min-height: 245px;
+      min-width: 245px;
+      padding: 17px;
+      background-color: rgb(0, 0, 0, 0.5);
+      border: solid 3px #4cd9c9;
+      .skillContainerIcons {
+        margin-right: 25px;
+        margin-right: 10px;
+        text-align: center;
+        height: 100%;
+      }
+    }
+  }
+
+  .hardSkills {
+    display: flex;
+    margin: 0 0 30px 0px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  // ----Soft Skills
+
+  .softSkills {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    .softSkillContainerAll {
+      width: 30%;
+    }
+  }
+  // SKILLS END
+
+  // ---------PORTFOLIO SECTION--------------
+  .myPortfolio .wrapper {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+      text-align: center;
+      text-transform: lowercase;
+      padding-top: 20px;
+      height: 45px;
+      width: 361px;
+      border-left: solid 2px #4cd9c9;
+      padding-top: 7px;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    p {
+      padding-bottom: 10px;
+    }
+    .myPortfolioAll {
+      .myPortImgSide {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        padding-left: 4%;
+
+        .myPortImgContainer {
+          width: 700px;
+        }
+      }
+      .myPortTextSide {
+        display: flex;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-left: 2px solid #4cd9c9;
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          height: 100%;
+        }
+        .myPortTextTags {
+          width: 30%;
+          padding-left: 50px;
+          height: 100%;
+          // border-left: 2px solid #4cd9c9;
+          // background-color: rgba(0, 0, 0, 0.4);
+        }
+        .myPortTextDescription {
+          width: 70%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 4%;
+        }
       }
     }
   }
 }
-
-.myPortfolio .wrapper {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.myPortTextSide ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 100%;
-}
-
-//
