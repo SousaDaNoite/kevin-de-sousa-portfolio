@@ -1,6 +1,6 @@
 // MEDIA QUERIES MAX 1000PX
 
-@media screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   html {
     font-size: 90%;
   }
@@ -20,10 +20,6 @@
     height: 100%;
   }
 
-  .intro p {
-    width: 40%;
-    width: 70%;
-  }
   .bioTextSide {
     padding-left: 30px;
     padding-left: 0px;
@@ -31,7 +27,7 @@
 }
 
 // MEDIA QUERIES MAX 865PX
-@media screen and (max-width: 865px) {
+@media only screen and (max-width: 865px) {
   html {
     .intro p {
       width: 70%;
@@ -47,18 +43,20 @@
       }
       .bioImgSide {
         width: 42%;
-        padding-right: 12px;
+        padding-right: 0;
         .bioImg {
-          box-shadow: 92px 15px #4cd9c9, 244px 15px #4cd9c9, 442px 15px #4cd9c9;
+          width: 100%;
+          box-shadow: 102px 15px #4cd9c9, 299px 15px #4cd9c9, 484px 15px #4cd9c9;
         }
       }
       .bioTextSide {
         padding-left: 0px;
         width: 45%;
         .bioTextContainer {
-          width: 85%;
-          max-width: 350px;
-          padding: 19px;
+          // width: null;
+          max-width: 500px;
+          // padding: 19px;
+          // margin: null;
         }
       }
     }
@@ -71,7 +69,7 @@
 }
 
 // MEDIA QUERIES MAX 795PX
-@media screen and (max-width: 795px) {
+@media only screen and (max-width: 795px) {
   html {
     h2 {
       font-size: 1.5rem;
@@ -103,10 +101,12 @@
         justify-content: center;
         margin-top: 61px;
         .bioImgContainer {
-          width: 250px;
+          width: 200px;
           .bioImg {
-            box-shadow: 3px 3px #4cd9c9;
+            box-shadow: 66px 0px #4cd9c9, -66px 0px #4cd9c9;
+            border: 4px solid #4cd9c9;
             padding-right: 0px;
+            width: 100%;
           }
         }
       }
@@ -114,14 +114,11 @@
       .bioTextSide {
         justify-content: center;
         .bioTextContainer {
-          max-width: 90%;
-          padding: 10px;
+          // max-width: 90%;
+          padding: 7%;
+          text-align: center;
         }
       }
-    }
-
-    .hardSkills {
-      flex-direction: column;
     }
 
     .skillContainerAll {
@@ -131,5 +128,11 @@
       max-width: 1000px;
       margin: 15px;
     }
+  }
+
+  .myPortfolioAll .myPortTextSide .myPortTextDescription {
+    /* width: 70%; */
+    padding-right: 4%;
+    align-items: center;
   }
 }
