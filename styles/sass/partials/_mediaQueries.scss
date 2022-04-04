@@ -222,4 +222,22 @@
       width: 100%;
     }
   }
+  .socialsAndMenu {
+    .socials {
+      display: none;
+    }
+
+    .mobileSocial {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sideNav {
+    padding-top: 15px;
+  }
+  .sideNav a {
+    font-size: 18px;
+  }
 }

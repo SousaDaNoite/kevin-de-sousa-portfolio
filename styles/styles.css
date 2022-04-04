@@ -451,8 +451,54 @@ nav .wrapper {
   margin-right: 20px;
   list-style: none;
 }
-.socialsAndMenu .dropdownMenu {
+
+.mobileSocial {
   display: none;
+}
+
+.sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #4cd9c9;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.sideNavIcon {
+  cursor: pointer;
+}
+
+.sideNav a {
+  padding: 10px 8px 10px 32px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sideNav a:hover {
+  color: rgba(0, 0, 0, 0.611);
+}
+
+nav ion-icon:hover {
+  color: rgba(0, 0, 0, 0.611);
+}
+
+.sideNav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 2rem;
+  margin-left: 50px;
 }
 
 header {
@@ -1070,5 +1116,23 @@ html .bio .bioTextContainer {
   }
   .myPortfolio .wrapper .myPortfolioAll .myPortTextSide .myPortTextTags ul li {
     width: 100%;
+  }
+
+  .socialsAndMenu .socials {
+    display: none;
+  }
+  .socialsAndMenu .mobileSocial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (max-height: 450px) {
+  .sideNav {
+    padding-top: 15px;
+  }
+
+  .sideNav a {
+    font-size: 18px;
   }
 }

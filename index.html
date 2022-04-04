@@ -33,40 +33,59 @@
           <ul class="socials">
             <li>
               <a href="https://www.linkedin.com/in/de-sousa-kevin/" alt="Link for linkedin">
-
                 <ion-icon name="logo-linkedin"></ion-icon>
-
               </a>
             </li>
 
             <li>
-
               <a href="https://github.com/Sousa89" alt="link to github">
                 <ion-icon name="logo-github"></ion-icon>
               </a>
-
             </li>
-            <li>
-              <a href="">
 
-                <ion-icon name="mail-outline"></ion-icon alt="link to mail">
-              </a>
-            </li>
 
           </ul>
 
-          <div class="menuToggle">
-            <ion-icon name="ellipsis-vertical-circle-outline"></ion-icon>
+
+
+          <div id="sideNav" class="sideNav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">></a>
             <ul class="dropdownMenu">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a>
+              <li>
+                <a href="#home">Home</a>
               </li>
-              <li><a href="#skills">Skills</a>
+              <li>
+                <a href="#about">About</a>
               </li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+            <!-- socials to be added only to dropdown in mobile -->
+            <ul class="mobileSocialContainer">
+
+              <li class="mobileSocial">
+                <a href="https://www.linkedin.com/in/de-sousa-kevin/" alt="Link for linkedin">
+                  <ion-icon name="logo-linkedin">LinkedIn</ion-icon> LinkedIn
+                </a>
+              </li>
+
+              <li class="mobileSocial">
+                <a href="https://github.com/Sousa89" alt="link to github">
+                  <ion-icon name="logo-github">GitHub Repo</ion-icon>GitHub Repo
+                </a>
+              </li>
+              </li>
             </ul>
           </div>
+
+          <ion-icon class="sideNavIcon" name="ellipsis-vertical-circle-outline" onclick="openNav()"></ion-icon>
         </div>
 
       </div>
@@ -74,7 +93,7 @@
 
 
     <!-- HEADER SECTION START -->
-    <header>
+    <header id="home">
       <div class="wrapper">
         <div class="heroBoxes">
 
@@ -487,7 +506,7 @@
             <input type="text" id="name" placeholder="Email subject" class="name">
 
             <label for="message"><span class="srOnly"></span></label>
-            <textarea name="" id="message" placeholder="Your message here..." class="message"></textarea>
+            <textarea name="" id="message" placeholder="Share some thoughts" class="message"></textarea>
 
             <button>Send Message</button>
 
