@@ -400,6 +400,7 @@ img {
 
 a {
   color: white;
+  text-decoration: none;
 }
 
 nav {
@@ -747,6 +748,12 @@ body {
 }
 .myPortfolio .wrapper p {
   padding-bottom: 10px;
+}
+.myPortfolio .wrapper a {
+  font-size: 2rem;
+}
+.myPortfolio .wrapper a:hover {
+  color: #4cd9c9;
 }
 .myPortfolio .wrapper .myPortfolioAll .myPortImgSide {
   display: -webkit-box;

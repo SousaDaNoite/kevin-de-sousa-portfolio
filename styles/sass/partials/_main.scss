@@ -165,6 +165,12 @@ body {
   p {
     padding-bottom: 10px;
   }
+  a {
+    font-size: 2rem;
+  }
+  a:hover {
+    color: #4cd9c9;
+  }
   .myPortfolioAll {
     .myPortImgSide {
       display: flex;
