@@ -671,9 +671,6 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .skills .skillContainerAll {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: lightgray;
   border-radius: 5%;
   display: -webkit-box;
